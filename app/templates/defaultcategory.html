@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block category_content %}
+    <div class="default-category-container">
+        <h2>Hmm... We couldn't quite get that</h2>
+        <p>
+            It seems the predicted emotion doesn't have a directly associated category yet. Here's some soothing/uplifting music to enjoy in the meantime. 
+        </p> 
+        
+        <img src="{{ category_data['image'] }}" alt="Default Category Image">
+
+        </div>
+{% endblock %}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflective and Understand</title>
+  <link rel="stylesheet" href="dem.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dem.css') }}"> 
+</head>
+<body>
+  <header>
+    <h1>Feeling lost? Find comfort and understanding here.</h1>
+    <p><strong>Predicted Text:</strong> {{ text }}</p>
+    <p><strong>Predicted Emotion:</strong> {{ emotion }}</p>
+  </header>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/masaan.jpg') }}" alt="Masaan Movie Poster">
+      <div class="card-content">
+        <h2>Masaan (2015)</h2>
+        <h4>Genre - Drama, Romance</h4>
+        <h4>IDMB - 8.1</h4>
+        <h5>Two intersecting stories in Varanasi explore love, loss, societal expectations, and redemption.</h5>
+        <a href="https://youtu.be/SKJfBo3xMW0?si=g7Vjl77RMmEmaCru" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/taare_zameen_par.jpg') }}" alt="Taare Zameen Par Movie Poster"> 
+     <div class="card-content">
+        <h2>Taare Zameen Par (2007)</h2>
+        <h4>Genre - Drama, Family</h4>
+        <h4>IDMB - 8.4</h4>
+        <h5> A teacher recognizes a dyslexic child's struggle and helps him find his unique strengths.</h5>
+        <a href="https://youtu.be/F-PAI2HnQUo?si=1-I4gtgFH30aDF31" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/sky_is_pink.jpg') }}" alt="The Sky Is Pink Movie Poster"> 
+      <div class="card-content">
+        <h2>The Sky Is Pink (2019)</h2>
+        <h4>Genre - Biography, Drama, Romance</h4>
+        <h4>IDMB - 7.6</h4>
+        <h5>A couple tells their life story through the eyes of their terminally ill teenage daughter.</h5>
+        <a href="https://youtu.be/prwUFBsDRLk?si=_4qslCyInaXlMh0X" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/udaan.jpg') }}" alt="Udaan Movie Poster"> 
+      <div class="card-content">
+        <h2>Udaan (2010)</h2>
+        <h4>Genre - Drama</h4>
+        <h4>IDMB - 8.2</h4>
+        <h5>A teen escapes an oppressive father and abusive home to strive for freedom and independence.</h5>
+        <a href="https://youtu.be/wEJxe2bE-cE?si=kA9ELpnf9SnwmdUz" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/october.jpg') }}" alt="October Movie Poster"> 
+      <div class="card-content">
+        <h2>October (2018)</h2>
+        <h4>Genre - Drama, Romance</h4>
+        <h4>IDMB - 7.6</h4>
+        <h5> A bittersweet tale of a hotel trainee caring for a comatose colleague.</h5>
+        <a href="https://youtu.be/7vracgLyJwI?si=jQn5ijiMR_VR0gqG" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/highway.jpg') }}" alt="Highway Movie Poster"> 
+      <div class="card-content">
+        <h2>Highway (2014)</h2>
+        <h4>Genre -  Drama, Adventure </h4>
+        <h4>IDMB - 7.6</h4>
+        <h5>A kidnapped woman finds unexpected freedom and healing while on the road with her abductors.</h5>
+        <a href="https://youtu.be/LSrDD52bx4A?si=ndXjkLl5O7epHPoR" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

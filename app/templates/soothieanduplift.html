@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy</title>
+  <link rel="stylesheet" href="dem.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dem.css') }}"> 
+</head>
+<body>
+  <header>
+    <h1>Feeling a bit down? Let's lift your spirits! 😊</h1>
+    <p><strong>Predicted Text:</strong> {{ text }}</p>
+    <p><strong>Predicted Emotion:</strong> {{ emotion }}</p>
+  </header>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/zindagi_na_milegi_dobara_.jpg') }}" alt="3 Idiots Movie Poster"> 
+      <div class="card-content">
+        <h2>Zindagi Na Milegi Dobara (2011)</h2>
+        <h4>Genre -  Drama, Romance, Adventure</h4>
+        <h4>IDMB - 8.1/10</h4>
+        <h5>A heartwarming journey of three friends reconnecting and discovering themselves..</h5>
+        <a href="https://youtu.be/FJrpcDgC3zU?si=BQoLUKUDEh9NdWLM" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/munnabhai.jpg') }}" alt="3 Idiots Movie Poster"> 
+      <div class="card-content">
+        <h2>Munna Bhai M.B.B.S (2003)</h2>
+        <h4>Genre -  Comedy, Drama</h4>
+        <h4>IDMB - 8.1/10</h4>
+        <h5>A hilarious comedy filled with optimism and the power of kindness.</h5>
+        <a href="https://youtu.be/6lCGvu-hwX4?si=Lunr_cJqC7Tjqsh1" target="_blank"><button>Watch Trailer </button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/chak de india.jpg') }}" alt="3 Idiots Movie Poster"> 
+      <div class="card-content">
+        <h2>Chak De! India(2007)</h2>
+        <h4>Genre - Drama, Sport</h4>
+        <h4>IDMB - 8.2/10</h4>
+        <h5> A rousing sports drama about a women's hockey team overcoming adversity and achieving success.</h5>
+        <a href="https://youtu.be/6a0-dSMWm5g?si=1ksSK95K2srbkCX_" target="_blank"><button>Watch Trailer </button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/dear_zindagi.jpg') }}" alt="3 Idiots Movie Poster"> 
+      <div class="card-content">
+        <h2>Dear Zindagi(2016)</h2>
+        <h4>Genre - Romance, Drama</h4>
+        <h4>IDMB - 7.6/10</h4>
+        <h5>A gentle and relatable film about navigating life's complexities and finding self-acceptance.</h5>
+        <a href="https://youtu.be/M-RKwp8i-RU?si=4IQZYhLKu7Sq17Xg" target="_blank"><button>Watch Trailer </button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/anand.jpg') }}" alt="3 Idiots Movie Poster"> 
+      <div class="card-content">
+        <h2>Anand(1971)</h2>
+        <h4>Genre - Drama, Musical</h4>
+        <h4>IDMB - 8.6/10</h4>
+        <h5> A classic, life-affirming film celebrating joy even in hardship.</h5>
+        <a href="https://youtu.be/K0eDlFX9GMc?si=HlXnDuFrloU44gKp" target="_blank"><button>Watch Trailer </button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/3 idiots.jpg') }}" alt="3 Idiots Movie Poster"> 
+      <div class="card-content">
+        <h2>3 Idiots (2009)</h2>
+        <h4>Genre - Comedy, Drama</h4>
+        <h4>IDMB - 8.4/10</h4>
+        <h5>A comedy about three friends challenging the education system and finding their true path.</h5>
+        <a href="https://youtu.be/K0eDlFX9GMc?si=HlXnDuFrloU44gKp" target="_blank"><button>Watch Trailer </button></a>
+      </div>
+    </div>
+    <!-- Repeat the above structure for more cards -->
+  </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go-Cab-USer</title>
+    <link rel="icon" href="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-emotions-emotions-and-emotional-intelligence-flaticons-lineal-color-flat-icons-8.png" type="image/x-icon">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<style>
+    .auth{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #tabs{
+        margin: 10px;
+        padding: 12px;
+        border: solid 1px black;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .signin{
+        padding: 12px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 220px;
+        height: 20px;
+    }
+    .btn{
+        color: azure;
+        background-color: black;
+        width: 230px;
+        border-radius: 5px;
+    }
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #050505;
+    background: #14181b;
+    font-weight: normal;
+    color: #ffffff;
+}
+    
+</style>
+</head>
+<body>
+<div class="auth">
+    <center>{% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}</center>
+<div id="tabs">
+    <ul>
+        <li><a href="#signin-tab">LOGIN</a></li>
+        <li><a href="#signup-tab">REGISTER</a></li>
+    </ul>
+    <div id="signup-tab">
+        <form method="post">
+           <div class="signin">
+            <input type="text" placeholder="Username" name="username">
+            <input type="email" placeholder="Email" name="email">
+            <input type="number" placeholder="ph.no" name="phno">
+            <input type="password" placeholder="Password" name="password">
+            <input class="btn" name="state" type="submit" value="REGISTER">
+            </div>
+            
+        </form>
+        
+    </div>
+    <div id="signin-tab">
+        <form method="post">
+            <div class="signin">
+            <input type="email" placeholder="Email" name="email">
+            <input type="password" placeholder="Password" name="password">
+            <input class="btn" name="state" type="submit" value="LOGIN">
+            </div>
+        </form>
+        <center><a href="#">Forget Password</a></center>
+    </div>
+</div>
+</div>
+
+<script>
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
+</script>
+
+</body>
+</html>

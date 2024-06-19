@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energetic and Motivate</title>
+  <link rel="stylesheet" href="dem.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dem.css') }}"> 
+</head>
+<body>
+  <header>
+    <h1>Lacking motivation? Get ready to feel unstoppable! 💪</h1>
+    <p><strong>Predicted Text:</strong> {{ text }}</p>
+    <p><strong>Predicted Emotion:</strong> {{ emotion }}</p>
+  </header>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/rang_de_basanti.jpg') }}" alt="Rang De Basanti Movie Poster"> 
+      <div class="card-content">
+        <h2>Rang De Basanti (2006)</h2>
+        <h4>Genre - Drama, History,  Comedy</h4>
+        <h4>IDMB - 8.2</h4>
+        <h5>Friends inspired by freedom fighters find a renewed sense of purpose and social change.</h5>
+        <a href="https://www.youtube.com/watch?v=hBkTyua-s0M" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/Bhaag Milkha Bhaag.jpg') }}" alt="Bhaag Milkha Bhaag Movie Poster">
+      <div class="card-content">
+        <h2>Bhaag Milkha Bhaag (2013)</h2>
+        <h4>Genre - Biography,  Drama, Sport</h4>
+        <h4>IDMB - 8.2</h4>
+        <h5>The inspiring true story of Milkha Singh, known as the Flying Sikh, overcoming obstacles.</h5>
+        <a href="https://www.youtube.com/watch?v=C_DUh6lak4c" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/dangal.jpg') }}" alt="Dangal Movie Poster">
+      <div class="card-content">
+        <h2>Dangal (2016)</h2>
+        <h4>Genre - Biography,  Drama, Sport </h4>
+        <h4>IDMB - 8.4</h4>
+        <h5>A former wrestler trains his daughters against societal norms to become wrestling champions.</h5>
+        <a href="https://www.youtube.com/watch?v=x_7YlGv9u1g" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/lakshya.jpg') }}" alt="Lakshya Movie Poster">
+      <div class="card-content">
+        <h2>Lakshya (2004)</h2>
+        <h4>Genre -  Drama, War </h4>
+        <h4>IDMB - 8.2</h4>
+        <h5>A directionless young man joins the army and finds his true calling.</h5>
+        <a href="https://www.youtube.com/watch?v=u_aLESDqUZU" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/chhichhore.jpg') }}" alt="Chhichhore Movie Poster">
+      <div class="card-content">
+        <h2>Chhichhore (2019)</h2>
+        <h4>Genre - Comedy,  Drama </h4>
+        <h4>IDMB - 8.0</h4>
+        <h5>A father recounts his college days to his son, emphasizing that failure is a part of life.</h5>
+        <a href="https://www.youtube.com/watch?v=tsxemFX0uAo" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/iqbal.jpg') }}" alt="Iqbal Movie Poster">
+      <div class="card-content">
+        <h2>Iqbal (2005)</h2>
+        <h4>Genre - Drama, Sport </h4>
+        <h4>IDMB - 8.1</h4>
+        <h5>A deaf and mute boy dreams of playing cricket for India.</h5>
+        <a href="https://www.youtube.com/watch?v=Y-9M6bG_fWc" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div> 
+  </div>
+</body>
+</html>

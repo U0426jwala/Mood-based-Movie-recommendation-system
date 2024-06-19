@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Dancing+Script&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/header_file.css">
+    <link rel="stylesheet" type="text/css" href="/static/footer_file.css">
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+    <!-- Use the appropriate script for Firestore if you choose Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"></script>
+    <script>
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBmwPcdANKLyHSXN_7I7yo-ZeZu54dxOKA",
+  authDomain: "movie-rec-df29b.firebaseapp.com",
+  projectId: "movie-rec-df29b",
+  storageBucket: "movie-rec-df29b.appspot.com",
+  messagingSenderId: "795010770305",
+  appId: "1:795010770305:web:9d8b1342876ab736fef480",
+  measurementId: "G-GNR8TVR6WV"
+};
+firebase.initializeApp(firebaseConfig);
+  </script>
+
+    </head>
+        <body style="background-color:rgb(127, 195, 255);">
+        {% include "header.html" %}
+        <section class="text-gray-700 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h2 class="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900">
+                    Welcome to My Website
+                </h2>
+            
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 animate-pulse">
+                  "The power of words can inspire, uplift, and transform."  
+                </h1>
+          
+                <p class="mb-8 leading-relaxed">
+                  Start your journey of audio to text conversion here.
+                </p> 
+          
+                <div class="flex justify-center">
+                  <form action="/audio_to_text/"><button class="inline-flex text-white button-primary border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Testing Here</button>
+                </div> 
+              </div>
+          
+            </div>
+          </section>
+          
+        </body>
+        {% extends "footer.html" %}
+        {% block footer%}fixed{% endblock %}
+    </html>

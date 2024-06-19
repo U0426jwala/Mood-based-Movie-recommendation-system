@@ -1,0 +1,89 @@
+<style>
+/* Base styles */
+	body {
+	 font-family: 'Open Sans', sans-serif;
+	 background-color: #222831;
+	 color: #2616ff;
+	 margin: 0;
+	 padding: 20px;
+	}
+
+	.header {
+	 text-align: center;
+	 font-weight: bold;
+	 font-size: 24px;
+	 color: #0096ff;
+	 margin-bottom: 20px;
+	}
+
+	.song-container {
+	 display: grid;
+	 grid-template-columns: 1fr 2fr;
+	 grid-gap: 20px;
+	 align-items: center;
+	 margin-bottom: 40px;
+	}
+
+	.song-card {
+	 background-color: #30343b;
+	 border-radius: 8px;
+	 padding: 20px;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	}
+
+	.song-box img {
+	 width: 100px;
+	 margin-bottom: 20px;
+	 border-radius: 5px;
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	 filter: blur(2px);
+	}
+
+	.song-info {
+	 flex-grow: 1;
+	 margin-bottom: 10px;
+	}
+
+	.song-title {
+	 font-weight: bold;
+	 margin-bottom: 5px;
+	}
+
+	.song-artist {
+	 font-size: 12px;
+	}
+
+	audio {
+	 width: 100%;
+	}
+
+	audio controls button {
+	 background-color: transparent;
+	 border: none;
+	 color: #e8e8e8;
+	 font-size: 16px;
+	 cursor: pointer;
+	}
+
+	audio controls button:hover {
+	 color: #0096ff;
+	}
+
+	.progress-bar {
+	 width: 100%;
+	 height: 4px;
+	 background-color: #3e434a;
+	 border-radius: 2px;
+	}
+
+	.progress-bar span {
+	 display: block;
+	 width: 0;
+	 height: 100%;
+	 background-color: #0096ff;
+	 border-radius: 2px;
+	 animation: progress
+
+ </style>

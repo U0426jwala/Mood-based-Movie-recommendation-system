@@ -1,0 +1,124 @@
+#loader{  
+    position:relative;
+    margin:40px;
+    clear:left;
+    height:20px;
+    z-index: 0;
+    text-align:center;
+}  
+
+.prompt {
+	text-align: center;
+	font-size: 35px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: bold;
+}	
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #660073, 0 0 20px #660073, 0 0 25px #660073, 0 0 30px #060073, 0 0 35px #060073;
+    }
+    
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #0f4da6, 0 0 20px #0f4da6, 0 0 25px #0f4da6, 0 0 30px #0f4da6, 0 0 35px #0f4da6, 0 0 40px #0f4da6;
+    }
+  }
+
+
+
+.registerbtn {
+  border-radius: 25px;
+  position:relative;
+  color: white;
+  padding: 20px 20px;
+  margin: 0.9% 0;
+  border: none;
+  cursor: pointer;
+  font-size: 150%;
+  width: 40%;
+  opacity: 0.9;
+}
+.button1{
+    background-color: green;
+    /* margin-left: 3%; */
+}
+.button2{
+	background-color: blue;
+}
+.button3{
+	background-color: red;
+}
+.button4{
+	background-color:cornflowerblue;
+}
+.button5{
+	background-color:blueviolet;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.registerbtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.registerbtn:hover span {
+  padding-right: 25px;
+}
+
+.registerbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ... other styles ... */
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+0% {
+  opacity: 1;
+}
+50% {
+  opacity: 0.5;
+}
+100% {
+  opacity: 1;
+}
+}
+h1.title-font {  /* Update if you're using a different class */
+  font-family: 'Dancing Script', cursive;
+}
+h2.title-font {  
+  font-family: 'Roboto', sans-serif; /* Customize the font if needed */
+}
+
+.inline-flex { /* Style for buttons in general */
+ display: inline-flex;
+ align-items: center;
+}
+
+.button-primary { /* Create a primary button style */
+ background-color: #007bff;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ text-decoration: none;
+ border-radius: 5px;
+ font-size: 1rem;
+ transition: background-color 0.3s ease; 
+}
+
+.button-primary:hover {
+ background-color: #0056b3; 
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engage and Explore</title>
+  <link rel="stylesheet" href="dem.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dem.css') }}"> 
+</head>
+<body>
+  <header>
+    <h1>Curious mood? Let's dive into something mind-bending! 🤔</h1>
+    <p><strong>Predicted Text:</strong> {{ text }}</p>
+    <p><strong>Predicted Emotion:</strong> {{ emotion }}</p>
+  </header>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/tumbbad.jpg') }}" alt="Tumbbad Movie Poster"> <div class="card-content">
+        <h2>Tumbbad (2018)</h2>
+        <h4>Genre - Fantasy, Horror, Drama</h4>
+        <h4>IDMB - 8.3/10</h4>
+        <h5>A visually stunning tale of greed, family, and a mythical goddess.</h5>
+        <a href="https://youtu.be/sN75MPxgvX8" target="_blank"><button>Watch Trailer</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/kahaani.jpg') }}" alt="Kahaani Movie Poster"> 
+        <div class="card-content">
+          <h2>Kahaani (2012)</h2>
+          <h4>Genre - Thriller, Mystery</h4>
+          <h4>IDMB - 8.1/10</h4>
+          <h5>A pregnant woman searches for her missing husband in Kolkata.</h5>
+          <a href="https://youtu.be/rsjamVgPoI8?si=i9--PjgxkFOL_1_1" target="_blank"><button>Watch Trailer </button></a>
+        </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/lunchbox.jpg') }}" alt="Lunchbox Movie Poster">
+      <div class="card-content">
+        <h2>Lunchbox (2013)</h2>
+        <h4>Genre - Drama, Romance</h4>
+        <h4>IDMB - 7.8/10</h4>
+        <h5>A mistaken lunchbox delivery leads to an unlikely connection between two strangers.</h5>
+        <a href="https://youtu.be/Y3zsNv4vgBI" target="_blank"><button>Watch Trailer </button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/ship_of_theseus.jpg') }}" alt="Ship of Theseus Movie Poster">
+        <div class="card-content">
+          <h2>Ship of Theseus (2012)</h2>
+          <h4>Genre - Drama, Philosophical </h4>
+          <h4>IDMB - 8.1/10</h4>
+          <h5>Three stories explore questions of identity, justice, and perception.</h5>
+          <a href="https://youtu.be/5BRZtmZgceQ" target="_blank"><button>Watch Trailer </button></a>
+        </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/trapped2.jpg') }}" alt="Trapped Movie Poster">
+        <div class="card-content">
+          <h2>Trapped (2016)</h2>
+          <h4>Genre - Survival, Thriller</h4>
+          <h4>IDMB - 7.5/10</h4>
+          <h5>A man gets trapped in his apartment and fights for survival.</h5>
+          <a href="https://youtu.be/lT0rDiZK4C4" target="_blank"><button>Watch Trailer </button></a>
+        </div>
+    </div>
+
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/drishyam.jpg') }}" alt="Drishyam Movie Poster">
+         <div class="card-content">
+          <h2>Drishyam (2015)</h2>
+          <h4>Genre - Crime, Drama, Thriller </h4>
+          <h4>IDMB - 8.2</h4>
+          <h5>A man goes to extreme lengths to protect his family after they commit an unexpected crime.</h5>
+          <a href="https://youtu.be/AuuX2j14NBg" target="_blank"><button>Watch Trailer </button></a>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
